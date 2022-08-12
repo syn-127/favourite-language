@@ -1,8 +1,10 @@
 import React from 'react';
+import GithubOutput from '../API/GithubApiRequest';
 
+// eslint-disable-next-line react/prop-types
 function UserInput({ username, handleChange }) {
   return (
-    <form onSubmit="">
+    <form onSubmit={GithubOutput}>
       <div id="Input">
         <h2>
           {' '}
